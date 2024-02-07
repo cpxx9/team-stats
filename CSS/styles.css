@@ -1,0 +1,211 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #0a0a23;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.background-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/town.jpg');
+  background-size: contain;
+}
+
+#text {
+  background-color: #0a0a23;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#game,
+#game div,
+#game button {
+  border-radius: 5px;
+}
+
+#game {
+  max-width: 60vw;
+  max-height: 50vh;
+  background-color: #ffffff;
+  opacity: .9;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data-points {
+  color: #5A8BBB;
+}
+
+#game div {
+  display: flex;
+  justify-content: center;
+}
+
+#game div#controls {
+  justify-content: space-evenly;
+}
+
+#game span {
+  font-size: 45px;
+}
+
+#game button {
+  font-size: 32px;
+}
+
+#monsterStats span {
+  font-size: 32px;
+}
+
+#game #text {
+  font-size: 36px;
+}
+
+#controls,
+#stats {
+  border: 1px solid #0a0a23;
+  padding: 5px;
+  color: #0a0a23;
+}
+
+#game div#monsterStats {
+  display: none;
+  border: 1px solid #0a0a23;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #c70d0d;
+  gap: 16px;
+}
+
+.stat {
+  padding-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+}
+
+button:disabled {
+  opacity: .6;
+}
+
+div#text {
+  display: inline;
+}
+
+/* FOOTER 
+_______________________________________________________*/
+a {
+	color: #3c8453;
+}
+
+a:hover {
+	color: #bcaa96;
+	text-decoration: none;
+}
+
+footer a {
+	color: #bcaa96;
+}
+
+footer a:hover {
+	color: #3c8453;
+}
+
+footer {
+	background: #222;
+	color: #d3d4d6;
+	padding: 0 20px;
+}
+
+/* footer p {
+	padding: 8px 0;
+} */
+
+.socials {
+	list-style-type: none;
+	padding: 0;
+}
+
+.socials li {
+	align-self: center;
+	display: inline-block;
+	margin-left: 10px;
+	padding-top: 6px;
+}
+
+.socials img {
+	width: 32px;
+}
+
+.socials img:hover {
+	opacity: 0.5;
+}
+
+@media screen and (min-width:560px) {
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width:559px) {
+	footer {
+		text-align: center;
+		padding: 10px;
+	}
+
+  #game {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  #controls {
+    flex-direction: column;
+  }
+  #controls button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:50px) and (max-width:558px) {
+  #game span {
+    font-size: 30px;
+  }
+  
+  #game button {
+    font-size: 24px;
+  }
+  
+  #monsterStats span {
+    font-size: 24px;
+  }
+  
+  #game #text {
+    font-size: 24px;
+  }
+
+  #stats {
+    justify-content: center;
+    text-align: center;
+  }
+}
